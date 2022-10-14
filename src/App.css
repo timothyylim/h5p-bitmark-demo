@@ -1,3 +1,10 @@
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: auto hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -20,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
 }
 
@@ -32,7 +39,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: white;
+}
+
+
+nav[role="full-horizontal"] {
+  text-align: left;
+}
+
+nav[role="full-horizontal"] ul {
+  /* width: 100%; */
+  list-style: none;
+}
+
+nav[role="full-horizontal"] ul li {
+  text-decoration: none;
+}
+
+.content {
+  width: 80%;
+}
+
+.code {
+  text-align: left;
+  background-color: #444e62;
 }
