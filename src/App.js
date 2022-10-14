@@ -62,7 +62,7 @@ function App() {
                 const d = JSON.parse(data)
                 console.log(data)
 
-                const markup = `[.true-false-1]\n ${d.question}`
+                const markup = `[.true-false-1]\n [+${d.question}]`
                 const isCorrect = JSON.parse(d.correct)
 
                 setBitmarkFile(
